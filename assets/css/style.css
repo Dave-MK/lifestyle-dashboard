@@ -1,0 +1,90 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Resets */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Grid Template Styles */
+
+#wrapper {
+    height: 100dvh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 5% 30% 30% 30% 5%;
+    grid-template-areas: 
+        "header header header header"
+        "card1   card2   card3  card4"
+        "card5   card5   card6  card4"
+        "card7   card8   card6  card9"
+        "footer footer footer footer";
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+}
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9 {
+    background-color: red;
+    margin: 0.15rem;
+    border-radius: 10px;
+}
+
+.card-1 {
+    grid-area: card1;
+}
+
+.card-2 {
+    grid-area: card2;
+}
+
+.card-3 {
+    grid-area: card3;
+}
+
+.card-4 {
+    grid-area: card4;
+}
+
+.card-5 {
+    grid-area: card5;
+}
+
+.card-6 {
+    grid-area: card6;
+}
+
+.card-7 {
+    grid-area: card7;
+}
+
+.card-8 {
+    grid-area: card8;
+}
+
+.card-9 {
+    grid-area: card9;
+}
+
+/* Other */
+
