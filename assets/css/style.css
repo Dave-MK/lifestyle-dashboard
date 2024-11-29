@@ -10,19 +10,25 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background: linear-gradient(145deg, #0a0a0a, #2c2c2c);
+    color: #fff;
+}
+
 /* Grid Template Styles */
 
 #wrapper {
-    height: 100dvh;
-    margin: 0;
+    min-height: 100dvh;
+    margin: 0.25rem;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 5% 30% 30% 30% 5%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 5% auto auto auto 5%;
+    gap: 0.25rem;
     grid-template-areas: 
         "header header header header"
-        "card1   card2   card3  card4"
-        "card5   card5   card6  card4"
-        "card7   card8   card6  card9"
+        "weath quote quote tasks"
+        "notes inbox inbox calen"
+        "pwgen pwgen socia focus"
         "footer footer footer footer";
 }
 
@@ -38,44 +44,125 @@
 
 .card {
     background-color: red;
-    margin: 0.15rem;
     border-radius: 10px;
 }
 
-#card-1 {
-    grid-area: card1;
+#weather {
+    grid-area: weath;
+    width: 100%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
 }
 
-#card-2 {
-    grid-area: card2;
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#card-3 {
-    grid-area: card3;
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
 }
 
-#card-4 {
-    grid-area: card4;
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 }
 
-#card-5 {
-    grid-area: card5;
+.search button img {
+    width: 1.25rem;
 }
 
-#card-6 {
-    grid-area: card6;
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
 }
 
-#card-7 {
-    grid-area: card7;
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
 }
 
-#card-8 {
-    grid-area: card8;
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
 }
 
-#card-9 {
-    grid-area: card9;
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+#inbox {
+    grid-area: inbox;
+}
+
+#calendar {
+    grid-area: calen;
+}
+
+#tasks {
+    grid-area: tasks;
+}
+
+#pass-gen {
+    grid-area: pwgen;
+}
+
+#qotd {
+    grid-area: quote;
+}
+
+#focus {
+    grid-area: focus;
+}
+
+#social {
+    grid-area: socia;
+}
+
+#notes {
+    grid-area: notes;
 }
 
 /* Other */
