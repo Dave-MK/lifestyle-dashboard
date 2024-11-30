@@ -11,6 +11,8 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient(145deg, #0a0a0a, #2c2c2c);
     color: #fff;
 }
@@ -18,33 +20,35 @@ body {
 /* Grid Template Styles */
 
 #wrapper {
-    min-height: 100dvh;
+    height: 100%;
     margin: 0.25rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 5% auto auto auto 5%;
-    gap: 0.25rem;
-    grid-template-areas: 
-        "header header header header"
-        "weath quote quote tasks"
-        "notes inbox inbox calen"
-        "pwgen pwgen socia focus"
-        "footer footer footer footer";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
 }
 
 #header {
-    grid-area: header;
+    width: 100dvw;
     text-align: center;
+    margin: 25px;  
 }
 
 #footer {
-    grid-area: footer;
+    width: 100dvw;
+    margin-top: 0 auto;
     text-align: center;
 }
 
 .card {
-    background-color: red;
+    min-height: fit-content;
+    background-color: #3b55af;
     border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    width: minmax(auto, 1fr);
 }
 
 #weather {
