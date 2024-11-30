@@ -150,13 +150,17 @@ body {
 #tasks {
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: rgb(255,185,73);
+    background: -moz-linear-gradient(185deg, rgba(255,185,73,1) 0%, rgba(222,77,119,1) 100%);
+    background: -webkit-linear-gradient(185deg, rgba(255,185,73,1) 0%, rgba(222,77,119,1) 100%);
+    background: linear-gradient(185deg, rgba(255,185,73,1) 0%, rgba(222,77,119,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb949",endColorstr="#de4d77",GradientType=1);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
 }
 
 #tasks h2 {
-    color: #002765;
+    color: #ffffff;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -188,7 +192,7 @@ button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #029cda;
+    background: #1cc49f;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -196,11 +200,13 @@ button {
 }
 
 ul li {
+    position: relative;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    justify-self: flex-start;
 }
 
 ul li::before {
@@ -209,10 +215,17 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(assets/images/tasks/unchecked.png);
-    background-size: cover;
-    background-position: center;
+    background: url('assets/images/tasks/unchecked.png') cover center;
     top: 12px;
     left: 8px;
+}
+
+ul li.checked {
+    color: #077051;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(assets/images/tasks/checked.png);
 }
 
