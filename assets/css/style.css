@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* General Resets and Styles */
 
@@ -143,6 +143,50 @@ body {
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+/* QOTD Generator Styles */
+
+#qotd {
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    width: 700px;
+    padding: 40px;
+    text-align: center;
+}
+
+#qotd h2 {
+    font-family: "Poppins", sans-serif;
+    color: rgb(135, 73, 160);
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+#qotd h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(117, 12, 65);
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    transform: translateX(300%);
+}
+
+#qotd blockquote {
+    font-family: "Meow Script", cursive;
+    color: #be62a3;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#qotd span {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    color: #b08bbb;;
 }
 
 /* Tasks List Styles */
