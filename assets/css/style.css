@@ -15,17 +15,19 @@ body {
     width: 100vw;
     background: linear-gradient(145deg, #0a0a0a, #2c2c2c);
     color: #fff;
+    overflow: hidden;
 }
 
 /* Layout and card Styles */
 
 #wrapper {
-    margin: 0.25rem;
+    margin: 0.5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
+    justify-content: stretch;
+    align-content: center;
     gap: 0.5rem;
+    
 }
 
 #header {
@@ -199,7 +201,6 @@ body {
     background: -webkit-linear-gradient(185deg, rgba(255,185,73,1) 0%, rgba(222,77,119,1) 100%);
     background: linear-gradient(185deg, rgba(255,185,73,1) 0%, rgba(222,77,119,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb949",endColorstr="#de4d77",GradientType=1);
-    margin: 100px auto 20px;
     padding: 40px 30px 70px;
 }
 
