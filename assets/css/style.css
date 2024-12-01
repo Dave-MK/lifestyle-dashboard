@@ -201,12 +201,12 @@ button {
 
 ul li {
     position: relative;
+    text-align: left;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
-    justify-self: flex-start;
 }
 
 ul li::before {
@@ -215,7 +215,9 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background: url('assets/images/tasks/unchecked.png') cover center;
+    background: url(../images/tasks/unchecked.png);
+    background-size: cover;
+    background-position: center;
     top: 12px;
     left: 8px;
 }
@@ -226,6 +228,22 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    background-image: url(assets/images/tasks/checked.png);
+    background-image: url(../images/tasks/checked.png);
 }
 
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
