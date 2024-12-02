@@ -15,7 +15,6 @@ body {
     width: 100vw;
     background: linear-gradient(145deg, #0a0a0a, #2c2c2c);
     color: #fff;
-    overflow: hidden;
 }
 
 /* Layout and card Styles */
@@ -23,8 +22,7 @@ body {
 #wrapper {
     width: 100dvw;
     margin: 0.5rem;
-    columns: 320px 3;
-    gap: 0.5rem;
+    columns: 300px;
 }
 
 #header {
@@ -40,10 +38,12 @@ body {
 }
 
 .card {
+    width: 100%;
     background-color: #3b55af;
     border-radius: 10px;
     text-align: center;
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 /* Weather Widget styles */
