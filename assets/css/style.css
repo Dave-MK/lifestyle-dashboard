@@ -44,8 +44,8 @@ body {
     clear: both;
 }
 
-#pass-gen {
-    height: 400px;
+#pass-gen, #notes, #focus, #inbox, #calendar, #social {
+    height: 300px;
 }
 
 /* Weather Widget styles */
