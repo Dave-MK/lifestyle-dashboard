@@ -21,7 +21,7 @@ body {
     columns: 500px;
     column-gap: 1.25rem;
     margin: 1.25rem;
-    row-gap: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 #header {
