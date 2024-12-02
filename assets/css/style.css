@@ -11,7 +11,7 @@
 }
 
 body {
-    background: darkblue
+    background: rgb(31, 31, 44);
     color: #fff;
 }
 
@@ -24,13 +24,11 @@ body {
 #header {
     width: 100dvw;
     text-align: center;
-    margin: 25px;  
 }
 
 #footer {
     width: 100dvw;
     text-align: center;
-    margin-top: auto;
 }
 
 .card {
