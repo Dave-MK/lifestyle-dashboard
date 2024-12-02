@@ -44,6 +44,10 @@ body {
     clear: both;
 }
 
+#pass-gen {
+    height: 400px;
+}
+
 /* Weather Widget styles */
 
 #weather {
