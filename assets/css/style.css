@@ -19,7 +19,8 @@ body {
 
 #wrapper {
     columns: 500px;
-    column-gap: 1.25rem;    
+    column-gap: 1.25rem;  
+    padding: 0.5rem;  
 }
 
 #header {
