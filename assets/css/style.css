@@ -35,6 +35,7 @@ body {
 
 .card {
     width: 100%;
+    max-width: 692px;
     background-color: #3b55af;
     border-radius: 10px;
     text-align: center;
