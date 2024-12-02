@@ -27,11 +27,13 @@ body {
 #header {
     width: 100dvw;
     text-align: center;
+    padding: 20px;
 }
 
 #footer {
     width: 100dvw;
     text-align: center;
+    padding: 20px;
 }
 
 .card {
