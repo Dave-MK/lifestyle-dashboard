@@ -19,6 +19,7 @@ body {
 
 #wrapper {
     columns: 500px;
+    clear: both;
 }
 
 #header {
@@ -38,6 +39,7 @@ body {
     text-align: center;
     align-items: center;
     margin-bottom: 0.5rem;
+    clear: both;
 }
 
 /* Weather Widget styles */
