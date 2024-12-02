@@ -10,6 +10,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background: rgb(31, 31, 44);
     color: #fff;
