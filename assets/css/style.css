@@ -19,6 +19,8 @@ body {
 
 #wrapper {
     columns: 500px;
+    column-gap: 1.25rem;
+    margin: 1.25rem;
 }
 
 #header {
@@ -37,7 +39,6 @@ body {
     border-radius: 20px;
     text-align: center;
     align-items: center;
-    margin: 1.25rem;
     page-break-inside: avoid;
 }
 
