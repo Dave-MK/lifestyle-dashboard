@@ -20,8 +20,6 @@ body {
 /* Layout and card Styles */
 
 #wrapper {
-    width: 100dvw;
-    margin: 0.5rem;
     columns: 300px;
 }
 
