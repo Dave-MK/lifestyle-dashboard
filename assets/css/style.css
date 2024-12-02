@@ -19,7 +19,6 @@ body {
 
 #wrapper {
     columns: 500px;
-    clear: both;
     margin: 1.5rem;
 }
 
@@ -40,7 +39,7 @@ body {
     text-align: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    clear: both;
+    page-break-inside: avoid;
 }
 
 #pass-gen, #notes, #focus, #inbox, #calendar, #social {
